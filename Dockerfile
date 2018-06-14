@@ -1,6 +1,3 @@
-# THIS DOCKER FILE WAS DEVELOPED BY ASSISTANZ NETWORKS
-
-# SPECIFY THE CONTAINER IMAGE
-FROM microsoft/windowsservercore
-
-CMD cmd.exe
+FROM scratch
+COPY hello /
+CMD ["/hello"]
